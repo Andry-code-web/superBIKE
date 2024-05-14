@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --letra--principal: "Jockey One";
+    --letra--dos:"Prompt";
+    --letra--tres: "Roboto Slab";
+    --letra--cuatro: "Work Sans";
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: 1rem;
+    position: absolute;
+    z-index: 100;
+}
+
+header nav{
+    display: flex;
+}
+
+header nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+}
+
+header nav a img{
+    width: 65%;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+}
+
+.banner img{
+    z-index: -1;
+    width: 100%;
+    mask-image: linear-gradient(black 80%, transparent);
+}
+
+/* ABOUT */
+
+.about {
+    width: 100%;
+    height: 100vh;
+    margin-top: 22rem;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    gap: 5rem;
+    position: relative; /* Añadido para la posición absoluta del texto */
+}
+
+.about .texto {
+    width: 45%;
+    height: 50%;
+}
+
+.about h2 {
+    writing-mode: vertical-rl;
+    font-family: var(--letra--dos);
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: .5rem;
+    position: relative; /* Añadido para la posición absoluta del borde */
+    z-index: 100;
+}
+
+.about .imagendeletra img{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    transform: translate(-50%, 50%); /* Centrar vertical y horizontalmente */
+    width: 50%;
+    box-shadow: 10px -6px 15px rgb(0 0 0 / 46%);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.about .content {
+    margin-top: 10rem; /* Ajusta según sea necesario */
+}
+
+.about h2::before {
+    content: '';
+    position: absolute;
+    height: 40%;
+    width: .7rem; /* Ancho del borde */
+    background-color: cyan; /* Color del borde */
+    left: 0; /* Posición a la izquierda */
+    top: 0; /* Posición arriba */
+}
+
+.texto p:first-child {
+    font-family: var(--letra--cuatro);
+    font-style: normal;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    line-height: 1.3rem;
+    font-weight: 400;
+}
+
+/* .texto p:last-child {
+    margin-top: 2rem;
+    font-family: var(--letra--cuatro);
+    font-style: normal;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    line-height: 1.2rem;
+} */
+
+/* REPUESTOS */
+
+.repuestos{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}   
+
+.repuestos img{
+    width: 100%;
+}
+
+.contenedor{
+    position: absolute;
+    top: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.contenedor h2{
+    writing-mode: vertical-rl;
+    font-family: var(--letra--dos);
+    font-weight: 700;
+    font-size: 3.5rem;
+    letter-spacing: .5rem;
+    position: relative;
+    z-index: 100;
+    color: #fff;
+}
+
+.contenedor h2::before{
+    content: '';
+    position: absolute;
+    height: 40%;
+    width: .7rem; /* Ancho del borde */
+    background-color: cyan; /* Color del borde */
+    left: 0; /* Posición a la izquierda */
+    top: 0; /* Posición arriba */
+}
+
+.textos{
+    width: 45%;
+    height: 50%;
+}
+
+.textos p:first-child{
+    font-family: var(--letra--cuatro);
+    font-style: normal;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    line-height: 1.3rem;
+    font-weight: 400;
+    text-shadow: 2px 2px 2px #000;
+    color: #fff;
+}
+
+.textos p:nth-child(2){
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-family: var(--letra--cuatro);
+    font-style: normal;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    line-height: 1.2rem;
+    text-shadow: 2px 2px 2px #000;
+    font-weight: 300;
+    color: #fff;
+}
+
+.textos a{
+    width: auto;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: cyan;
+    font-family: var(--letra--cuatro);
+    font-weight: 600;
+    opacity: .9;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+/* ACCESORIOS */
+.accesorios {
+    margin-top: 22rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.contenemos{
+    width: 100%;
+    box-shadow: 3px 2px 15px rgb(88, 88, 88);
+}
+
+.imgenes{
+    width: 100%;
+}
+
+.content_info{
+    width: 90%;
+}
+
+.content_info h2{
+    font-family: var(--letra--principal);
+    font-size: 4rem;
+    position: relative;
+}
+
+.content_info h2::before{
+    content: '';
+    position: absolute;
+    height: 7%;
+    width: 8rem; /* Ancho del borde */
+    background-color: cyan; /* Color del borde */
+    left: 0; /* Posición a la izquierda */
+    bottom: 0;
+}
+
+.content_info p{
+    font-family: var(--letra--cuatro);
+    font-style: normal;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+    line-height: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    margin-top: 2.5rem;
+}
+
+.content_info a{
+    width: auto;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: cyan;
+    font-family: var(--letra--cuatro);
+    font-weight: 600;
+    opacity: .9;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+/* BICICLETA */
+.bicicletas{
+    width: 100%;
+    height: 100vh;
+}
+
+.images{
+    width: 100%;
+    height: 70vh;
+    z-index: 1;
+}
+
+.letra{
+    position: absolute;
+    z-index: -1;
+}
+
+.letra h1{
+    font-family: var(--letra--principal);
+    font-size: 20rem;
+    color: cyan;
+    text-shadow: 2px 3px 10px #ccc;
+}
+
+.parrafos{
+    width: 100%;
+}
+
+.parrafos p{
+    font-family: var(--letra--dos);
+    font-size: 1.15rem;
+}
+
+.parrafos a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: cyan;
+    text-shadow: 1px 1px .5px rgba(0, 0, 0, 0.616);
+    letter-spacing: 1.5px;
+}
+
+/* CONTACTO */
+.contactanos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 4rem;
+    gap: 8rem;
+    background-image: url("/img/fondo_contacto.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.contactanos h2{
+    writing-mode: vertical-rl;
+    font-family: var(--letra--dos);
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: .1rem;
+    position: relative;
+    z-index: 100;
+    color: #fff;
+}
+
+.contactanos h2::before{
+    content: '';
+    position: absolute;
+    height: 40%;
+    width: .7rem; /* Ancho del borde */
+    background-color: cyan; /* Color del borde */
+    left: 0; /* Posición a la izquierda */
+    top: 0; /* Posición arriba */
+}
+
+.formulario{
+    width: 60%;
+}
+
+.formulario p{
+    font-family: var(--letra--dos);
+    font-weight: 200;
+    color: #fff;
+}
+
+.formulario form{
+    width: 70%;
+}
+
+.formulario form input[name=Nombre],
+.formulario form input[name=Email],
+.formulario form input[name=Telefono]{
+    width: 100%;
+    height: 45px;
+    background-color: rgba(163, 163, 163, 0.637);
+    border: none;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #fff;
+    font-family: var(--letra--dos);
+    font-weight: 400;
+}
+
+.formulario form textarea[name="Mensaje"] {
+    width: 100%;
+    height: 25vh;
+    background-color: rgba(163, 163, 163, 0.637);
+    border: none;
+    padding: 1rem;
+    color: #fff;
+    font-family: var(--letra--dos);
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.formulario form textarea[name="Mensaje"]::placeholder{
+    font-family: var(--letra--dos);
+    font-weight: 400;
+    color: #ffffffb4;
+}
+
+.formulario form textarea[name="Mensaje"]:focus{
+    outline: none;
+}
+
+.formulario form input[name=Nombre]::placeholder,
+.formulario form input[name=Email]::placeholder,
+.formulario form input[name=Telefono]::placeholder,
+.formulario form input[name=Mensaje]::placeholder{
+    font-family: var(--letra--dos);
+    font-weight: 400;
+    color: #ffffffb4;
+}
+
+.formulario form input[name=Nombre]:focus,
+.formulario form input[name=Email]:focus,
+.formulario form input[name=Telefono]:focus,
+.formulario form input[name=Mensaje]:focus{
+    outline: none;
+}
+
+
+.formulario form button{
+    width: auto;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: cyan;
+    font-family: var(--letra--cuatro);
+    font-weight: 600;
+    opacity: .9;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    border: none;
+}
