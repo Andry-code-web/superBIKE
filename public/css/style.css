@@ -18,6 +18,7 @@ header{
     margin-top: 1rem;
     position: absolute;
     z-index: 100;
+    width: 100%;
 }
 
 header nav{
@@ -107,6 +108,7 @@ header nav a img{
     letter-spacing: 2px;
     line-height: 1.3rem;
     font-weight: 400;
+    text-align: justify;
 }
 
 /* .texto p:last-child {
@@ -174,6 +176,7 @@ header nav a img{
     font-weight: 400;
     text-shadow: 2px 2px 2px #000;
     color: #fff;
+    text-align: justify;
 }
 
 .textos p:nth-child(2){
@@ -256,6 +259,7 @@ header nav a img{
     font-weight: 400;
     margin-bottom: 3rem;
     margin-top: 2.5rem;
+    text-align: justify;
 }
 
 .content_info a{
