@@ -23,6 +23,7 @@ header{
 
 header nav{
     display: flex;
+    justify-content: center;
 }
 
 header nav a{
@@ -110,15 +111,6 @@ header nav a img{
     font-weight: 400;
     text-align: justify;
 }
-
-/* .texto p:last-child {
-    margin-top: 2rem;
-    font-family: var(--letra--cuatro);
-    font-style: normal;
-    font-size: .9rem;
-    letter-spacing: 1px;
-    line-height: 1.2rem;
-} */
 
 /* REPUESTOS */
 
